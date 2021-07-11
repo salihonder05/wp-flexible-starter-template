@@ -1,0 +1,32 @@
+{
+  "name": "salihonder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Salih ÖNDER - WP / FlexibleGS Wordpress Starter Kit",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salihonder05/wp-flexible-starter-template.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-cli": "2.3.0",
+    "gulp-sass": "4.1.1",
+    "gulp-sass-lint": "1.4.0",
+    "gulp-sourcemaps": "3.0.0"
+  },
+  "keywords": [],
+  "author": "Salih ÖNDER",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
+    "start": "rm -f style.css && rm -f style.css.map && gulp"
+  },
+  "browserslist": [
+    "ff > 2",
+    "> 2%",
+    "ie 8"
+  ]
+}
