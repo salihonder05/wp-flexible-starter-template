@@ -20,3 +20,23 @@ npm run build
 npm start
 ```
 2. Then "gulp" will be watching the .scss files that are in "scss" folder.
+
+
+IF YOU USE WINDOWS PC =>
+CHANGE PACKAGE JSON =>
+
+"devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-cli": "2.3.0",
+    "gulp-sass": "^4.0.0",
+    "gulp-sass-lint": "1.4.0",
+    "gulp-sourcemaps": "3.0.0"
+  },
+  "keywords": [],
+  "author": "Salih ÖNDER",
+  "license": "ISC",
+  "scripts": {
+    "build": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
+    "start": "del -f style.css && del -f style.css.map && gulp"
+  },
