@@ -23,6 +23,7 @@
   "license": "ISC",
   "scripts": {
     "build": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
+	"buildw": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
     "start": "rm -f style.css && rm -f style.css.map && gulp",
     "startw": "del -f style.css && del -f style.css.map && gulp",
 	"lh" : "lighthouse https://siteadi.com --budget-path=budget.json"
