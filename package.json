@@ -15,14 +15,17 @@
     "gulp-cli": "2.3.0",
     "gulp-sass": "4.1.1",
     "gulp-sass-lint": "1.4.0",
-    "gulp-sourcemaps": "3.0.0"
+    "gulp-sourcemaps": "3.0.0",
+	 "lighthouse": "^8.2.0"
   },
   "keywords": [],
   "author": "Salih ÖNDER",
   "license": "ISC",
   "scripts": {
     "build": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
-    "start": "rm -f style.css && rm -f style.css.map && gulp"
+    "start": "rm -f style.css && rm -f style.css.map && gulp",
+    "startw": "del -f style.css && del -f style.css.map && gulp",
+	"lh" : "lighthouse https://siteadi.com --budget-path=budget.json"
   },
   "browserslist": [
     "ff > 2",
