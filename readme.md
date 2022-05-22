@@ -40,3 +40,14 @@ CHANGE PACKAGE JSON =>
     "build": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
     "start": "del -f style.css && del -f style.css.map && gulp"
   },
+
+
+
+/***********/
+  Version Notes:
+  Campatilibilty, Versions
+  node -v : v17.5.0
+  npm -v : 8.4.1
+  packages versions in package.json
+/***********/
+

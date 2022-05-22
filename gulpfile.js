@@ -1,7 +1,6 @@
 // https://gist.github.com/leymannx/f7867942184d01aa2311
-
 var gulp        = require('gulp'),
-    sass        = require('gulp-sass'),
+    sass        = require('gulp-sass')(require('sass'));
     sassLint    = require('gulp-sass-lint'),
     sourcemaps  = require('gulp-sourcemaps'),
 	prefix      = require('gulp-autoprefixer');

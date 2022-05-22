@@ -8,25 +8,24 @@
     "type": "git",
     "url": "https://github.com/salihonder05/wp-flexible-starter-template.git"
   },
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "4.0.2",
-    "gulp-autoprefixer": "8.0.0",
-    "gulp-cli": "2.3.0",
-    "gulp-sass": "4.1.1",
-    "gulp-sass-lint": "1.4.0",
-    "gulp-sourcemaps": "3.0.0",
-	 "lighthouse": "^8.2.0"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.52.1"
   },
   "keywords": [],
   "author": "Salih ÖNDER",
   "license": "ISC",
   "scripts": {
     "build": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
-	"buildw": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
+    "buildw": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
     "start": "rm -f style.css && rm -f style.css.map && gulp",
     "startw": "del -f style.css && del -f style.css.map && gulp",
-	"lh" : "lighthouse https://siteadi.com --budget-path=budget.json"
+    "lh": "lighthouse https://siteadi.com --budget-path=budget.json"
   },
   "browserslist": [
     "ff > 2",
