@@ -22,7 +22,7 @@ npm start
 2. Then "gulp" will be watching the .scss files that are in "scss" folder.
 
 
-IF YOU USE WINDOWS PC =>
+IF YOU USING A WINDOWS PC =>
 CHANGE PACKAGE JSON =>
 
 "devDependencies": {
