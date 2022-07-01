@@ -181,21 +181,21 @@
   }
   @else if $prop == "gutter" {
     width: calc(100% + #{$val}#{"px"});
-    margin-left: -#{$val / 2}#{"px"};
-    margin-right: -#{$val / 2}#{"px"};
+    margin-left: -#{calc($val / 2)}#{"px"};
+    margin-right: -#{calc($val / 2)}#{"px"};
     padding-left: 0;
     padding-right: 0;
     > * {
-      padding-left: #{$val / 2}#{"px"};
-      padding-right: #{$val / 2}#{"px"};
+      padding-left: #{calc($val / 2)}#{"px"};
+      padding-right: #{calc($val / 2)}#{"px"};
     }
   }
   @else if $prop == "outside" {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-left: #{$val / 2}#{"px"};
-    padding-right: #{$val / 2}#{"px"};
+    padding-left: #{calc($val / 2)}#{"px"};
+    padding-right: #{calc($val / 2)}#{"px"};
   }
   @else {
     > * {
@@ -203,7 +203,7 @@
         width: auto;
       }
       @else {
-        width: #{100% / $prop};
+        width: #{calc(100% / $prop)};
       }
     }
   }
@@ -247,6 +247,6 @@
     order: 0;
   }
   @else {
-    width: #{100% / $val * $prop};
+    width: #{calc(100% / $val * $prop)};
   }
 }
