@@ -15,16 +15,16 @@
     "gulp-sass": "^5.1.0",
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.52.1"
+    "sass": "^1.59.3"
   },
   "keywords": [],
   "author": "Salih ÖNDER",
   "license": "ISC",
   "scripts": {
-    "build": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
-    "buildw": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
-    "start": "rm -f style.css && rm -f style.css.map && gulp",
-    "startw": "del -f style.css && del -f style.css.map && gulp",
+    "buildm": "npm install --unsafe-perm=true --allow-root && rm -f style.css && rm -f style.css.map && gulp build",
+    "build": "npm install --unsafe-perm=true --allow-root && del -f style.css && del -f style.css.map && gulp build",
+    "startm": "rm -f style.css && rm -f style.css.map && gulp",
+    "start": "del -f style.css && del -f style.css.map && gulp",
     "lh": "lighthouse https://siteadi.com --budget-path=budget.json"
   },
   "browserslist": [
